@@ -28,7 +28,7 @@ resource "aws_security_group" "allow_ssh" {
 
 # Step 2: Launch EC2 Instance
 resource "aws_instance" "amalan_ec2" {
-  ami           = "ami-0844f359572fd681d" # for eu-north-1
+  ami           = "ami-0013b4404496ef718" # for eu-north-1
   instance_type = "t3.micro"
   vpc_security_group_ids = [aws_security_group.allow_ssh.id]
 
